@@ -30,9 +30,11 @@ const Movie = () => {
         <BeatLoader color="green" />
       ) : (
         <div className="flex flex-col gap-4 items-center">
-          <h2 className="text-red-400 text-2xl">{movie.title}</h2>
+          <h2 className="text-red-400 text-2xl">
+            {movie.title} ({movie.year})
+          </h2>
           <img className="w-96 rounded-xl" src={movie.pic} alt="" />
-          <div>{movie.description}</div>
+          <div className="md:px-72">{movie.description}</div>
           <button
             className="bg-orange-500 active:bg-orange-700 text-white rounded-lg py-2 px-4"
             onClick={() => setCont(cont + 1)}
