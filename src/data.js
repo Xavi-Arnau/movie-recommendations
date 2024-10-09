@@ -5,4 +5,6 @@ export const names = [
   "farritova",
   "farry",
   "farrenix",
+  "farrineau",
+  "farrenics",
 ];
